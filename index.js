@@ -10,7 +10,7 @@ const PORT = 5000;
 
 //routes
 app.get("/create", (request, response) => {
-  let time = format(new Date(), "dd-MM-yyyy-hh-mm-ss");
+  let time = format(new Date(), "dd-MM-yyyy-HH-mm-ss");
   //   console.log(now);
   let filePath = `TimeStamp/${time}.txt`;
   fs.writeFileSync(filePath, `${time}`, "utf8");
